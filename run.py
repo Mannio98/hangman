@@ -105,6 +105,20 @@ def play_hangman():
     guesses = []
 
     print("Welcome to Hangman!")
+    
+    initial_hangman = (
+        """
+        ___________
+        |/        |
+        |         
+        |        
+        |         
+        |        
+        |
+        
+        """
+    )
+    print(initial_hangman)
 
     while max_attempts > 0:
         current_display = display_word(word_to_guess, guesses)

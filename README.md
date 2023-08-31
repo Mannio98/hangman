@@ -25,4 +25,9 @@ I ran this python code through the extends class validator and had no syntax err
 ![Screenshot of validator](/assets/images/good-code.png)
 
 ## Deployment
-This site was deployed to Heroku
+This site was deployed to Heroku. The steps to deployment are as follows:
+-Go to settings section and add the github buildpack and then the nodejs buildpack
+
+-Go to deploy page and click link to GitHub
+
+-

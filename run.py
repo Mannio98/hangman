@@ -3,6 +3,75 @@ import random
 words = ["Mango", "Frolic", "Turtle", "Whisker", "Puzzle", "Guitar", "Rabbit", "Zebra", "Orange", 
         "Sunset", "Banana", "Drive", "Candle", "Rocket", "Laptop", "Orchid", "Party", "Jungle", "Plaque", "Fizzle"]
 
+hangman_figures = [
+        """
+        ___________
+        |/        |
+        |         
+        |        
+        |         
+        |        
+        |
+        
+        """,
+        """
+        ___________
+        |/        |
+        |         O
+        |        
+        |         
+        |        
+        |
+        
+        """,
+        """
+        ___________
+        |/        |
+        |         O
+        |         |
+        |         |
+        |        
+        |
+        
+        """,
+        """
+        ___________
+        |/        |
+        |         O
+        |        /|
+        |         |
+        |
+        | 
+        """,
+        """
+        __________
+        |/        |
+        |         O
+        |        /|\\
+        |         |
+        |
+        |
+        """,
+        """
+        __________
+        |/        |
+        |         O
+        |        /|\\
+        |         |
+        |        /
+        |
+        """,
+        """
+        __________
+        |/        |
+        |         O
+        |        /|\\
+        |         |
+        |        / \\
+        |
+        """
+]
+
 def choose_word():
     return random.choice(words)
 
@@ -45,6 +114,7 @@ def play_hangman():
         else:
             print("Incorrect guess.")
             max_attempts -= 1
+            print(hangman_figures[6 - max_attempts])
 
 
         if current_display == word_to_guess:
@@ -61,3 +131,4 @@ while True:
     if play_again != 'y':
         print("Thanks for playing! Goodbye.")
         break
+

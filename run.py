@@ -1,5 +1,18 @@
 import random
 
+hangman_banner = """
+  _    _                                         
+ | |  | |                                        
+ | |__| | __ _ _ __   __ _ _ __ ___   __ _ _ __  
+ |  __  |/ _` | '_ \ / _` | '_ ` _ \ / _` | '_ \ 
+ | |  | | (_| | | | | (_| | | | | | | (_| | | | |
+ |_|  |_|\__,_|_| |_|\__, |_| |_| |_|\__,_|_| |_|
+                     __/ |                      
+                    |___/                       
+"""
+
+print(hangman_banner)
+
 words = ["Mango", "Frolic", "Turtle", "Whisker", "Puzzle", "Guitar", "Rabbit", "Zebra", "Orange", 
         "Sunset", "Banana", "Drive", "Candle", "Rocket", "Laptop", "Orchid", "Party", "Jungle", "Plaque", "Fizzle"]
 

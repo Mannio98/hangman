@@ -26,8 +26,10 @@ I ran this python code through the extends class validator and had no syntax err
 
 ## Deployment
 This site was deployed to Heroku. The steps to deployment are as follows:
+
 -Go to settings section and add the github buildpack and then the nodejs buildpack
 
 -Go to deploy page and click link to GitHub
 
--
+-Put the name of your repository into the field and then hit deploy.
+
